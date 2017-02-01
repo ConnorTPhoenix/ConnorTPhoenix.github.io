@@ -62,9 +62,7 @@ Two assumptions were made related to the "State" column.
              return np.median([row[row_index] for row in SAT_data])
 
         def calc_mode(row_index):
-             return mode([row[row_index] for row in SAT_data]
-
-    )
+             return mode([row[row_index] for row in SAT_data])
 
     Passing in the row indices of the numeric columns as arguments yield the following results:
 
