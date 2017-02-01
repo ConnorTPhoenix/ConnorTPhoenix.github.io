@@ -63,7 +63,7 @@ Taking it a step further, I then calculated the standard deviation (std), mean, 
         def calc_mode(row_index):
              return mode([row[row_index] for row in SAT_data])
 
-Passing in the row indices of the numeric columns as arguments yield the following results:
+Passing in the row indices of the numeric columns as arguments yielded the following results:
 
         Output:
 
@@ -87,7 +87,9 @@ Passing in the row indices of the numeric columns as arguments yield the followi
         Verbal: ModeResult(mode=array([562]), count=array([3]))
         Math: ModeResult(mode=array([499]), count=array([6]))
 
-These results support our hunch that there was more variability in the Math scores compared to Verbal.
+The biggest take away from these measures is that the STANDARD DEVIATION supports our hunch that there is more variability in the Math (std=35.7) scores compared to Verbal (std=32.9).
+
+Also, given that the MEAN > MEDIAN for each numeric column, there is a positive skew to each distribution. However, it is not clear this is a significant level of skewness. 
 
 ##Data Visualization
 
