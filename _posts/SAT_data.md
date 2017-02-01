@@ -32,7 +32,7 @@ Two assumptions were made related to the "State" column.
 
 ##Computing Summary Statistics
 
-    In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
+In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
 
     min and max were calculated using list comprehension for each column as follows:
 
@@ -47,10 +47,9 @@ Two assumptions were made related to the "State" column.
         max_math: 603
         min_math: 439
 
+From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
 
-    From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
-
-    Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculated std() using numpy as follows:
+Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculated std() using numpy as follows:
 
         def std_dev(row_index):
     	    return np.std([row[row_index] for row in SAT_data])
@@ -65,7 +64,7 @@ Two assumptions were made related to the "State" column.
         def calc_mode(row_index):
              return mode([row[row_index] for row in SAT_data])
 
-    Passing in the row indices of the numeric columns as arguments yield the following results:
+Passing in the row indices of the numeric columns as arguments yield the following results:
 
         Output:
 
@@ -89,7 +88,7 @@ Two assumptions were made related to the "State" column.
         Verbal: ModeResult(mode=array([562]), count=array([3]))
         Math: ModeResult(mode=array([499]), count=array([6]))
 
-    These results support our hunch that there was more variability in the Math scores compared to Verbal.
+These results support our hunch that there was more variability in the Math scores compared to Verbal.
 
 ##Data Visualization
 
