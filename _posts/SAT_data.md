@@ -45,16 +45,42 @@ min_math: 439
 
 From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
 
-Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculated std() using numpy as follows:
+Taking it a step further, I then calculated the standard deviation (std), mean, median, and mode for each numeric column. I first created a function for each statistic using numpy and scypi (for mode) as follows:
 
-    def std_dev(row_index):
+def std_dev(row_index):
 	    return np.std([row[row_index] for row in SAT_data])
 
-Passing in the row indices of the numeric columns as arguments yield the following results:
 
-Rate Standard Deviation: 27.0379964945
-Verbal Standard Deviation: 32.9150949616
-Math Standard Deviation: 35.6669961643
+    def mean(row_index):
+     return np.mean([row[row_index] for row in SAT_data])
+
+    def median(row_index):
+         return np.median([row[row_index] for row in SAT_data])
+
+    def calc_mode(row_index):
+         return mode([row[row_index] for row in SAT_data]
+
+Passing in the row indices of the numeric columns as arguments yielded the following results:
+
+STANDARD DEVIATION
+Rate: 27.0379964945
+Verbal: 32.9150949616
+Math: 35.6669961643
+
+MEAN:
+Rate: 37.0
+Verbal: 532.529411765
+Math: 531.843137255
+
+MEDIAN:
+Rate: 33.0
+Verbal: 527.0
+Math: 525.0
+
+MODE:
+Rate: ModeResult(mode=array([4]), count=array([3]))
+Verbal: ModeResult(mode=array([562]), count=array([3]))
+Math: ModeResult(mode=array([499]), count=array([6]))
 
 These results support our hunch that there was more variability in the Math scores compared to Verbal.
 
