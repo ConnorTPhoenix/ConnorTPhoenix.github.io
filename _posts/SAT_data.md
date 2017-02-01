@@ -87,6 +87,6 @@ Math Score v. Verbal Score
 
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Math_Heatmap.png)
 
-![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Particpation_Heatmap.png)
-
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Verbal_Heatmap.png)
+
+![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Particpation_Heatmap.png)
