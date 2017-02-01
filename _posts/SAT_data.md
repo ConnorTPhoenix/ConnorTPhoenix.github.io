@@ -49,11 +49,10 @@ In order to gain a better sense of the data I computed the min, max, and standar
 
 From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
 
-Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculated std() using numpy as follows:
+Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculate each statistic as follows:
 
         def std_dev(row_index):
     	    return np.std([row[row_index] for row in SAT_data])
-
 
         def mean(row_index):
          return np.mean([row[row_index] for row in SAT_data])
