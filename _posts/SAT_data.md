@@ -11,7 +11,7 @@ The dataset is taken from CollegeBoard.com and provides the average SAT score by
 
 Fig 1. (Summary of Data)
 
-![](../images/Screen Shot 2017-01-31 at 4.34.19 PM)
+![](../images/Screen Shot 2017-01-31 at 4.34.19 PM.png)
 
 
 
@@ -101,7 +101,7 @@ Also, given that the MEAN > MEDIAN for each numeric column, there is a positive 
 
 To get a better since of how each column in sat_scores.csv relate to each other I plotted three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math Score v. Verbal Score).
 
-![](../images/SAT_scatter.png)
+![](../images/SAT_Scatter.png)
 
 SAT Score v. Participation Rate
 
