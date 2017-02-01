@@ -7,7 +7,7 @@ The dataset is taken from CollegeBoard.com and provides the average SAT score by
 
 Fig 1. (Summary of Data)
 
-![Preview](ConnorTPhoenix.github.io/_posts/assets/Screen Shot 2017-01-31 at 4.34.19 PM.png)
+![img](ConnorTPhoenix.github.io/_posts/assets/Screen Shot 2017-01-31 at 4.34.19 PM.png)
 
     enter code here
 
