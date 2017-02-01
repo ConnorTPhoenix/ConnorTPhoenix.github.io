@@ -68,22 +68,28 @@ To get a better since of how each column in sat_scores.csv relate to each other 
 
 SAT Score v. Participation Rate
 
-	There appears to be a negative correlation between Participation Rate and Verbal Score.
+* There appears to be a negative correlation between Participation Rate and Verbal Score.
 
-    Similarly, we observe a negative correlation between Participation Rate and Math Score.
+* Similarly, we observe a negative correlation between Participation Rate and Math Score.
 
-	However there was one significant outlier to this trend within the Math distribution. OH: [26, 534, 439], where the participation was low (26%) and the Math Score was very low (439).
+* However there was one significant outlier to this trend within the Math distribution. OH: [26, 534, 439], where the participation was low (26%) and the Math Score was very low (439).
 
-    One possible explanation for this phenomenon is that in states with lower participation only higher achieving students are expected to take the exam.
+* One possible explanation for this phenomenon is that in states with lower participation only higher achieving students are expected to take the exam.
 
 Math Score v. Verbal Score
 
 
-	There appears to be a strong positive correlation between Math and Verbal SAT scores.
+* There appears to be a strong positive correlation between Math and Verbal SAT scores.
 
-    This observation feels intuitively accurrate. It seems likely that a student's achievement across subjects would be strongly correlated.
+* This observation feels intuitively accurrate. It seems likely that a student's achievement across subjects would be strongly correlated.
 
 ###Heatmap
+
+To get a better sense of how SAT scores and participation rates vary across the US I generated three heatmaps for each numeric column using Tableau.  Each map highlights the variability in the data such that States with higher scores (or participation rates) are shaded in darker blue.
+
+* From the two SAT score maps we can see that the highest scores appear concentrated in the central heartland states.
+
+* Again we observe the inverse relationship between SAT scores and participation rate we saw in the scatterplots. The states with the darkest shading in the score maps are largely the states with the lightest shading on the participation map.   
 
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Math_Heatmap.png)
 
