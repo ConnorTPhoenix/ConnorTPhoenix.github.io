@@ -59,4 +59,28 @@ Math Standard Deviation: 35.6669961643
 These results support our hunch that there was more variability in the Math scores compared to Verbal.
 
 ##Data Visualization
+
+###ScatterPlots
+
+To get a better since of how each column in sat_scores.csv relate to each other I plotted a three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math v. Verbal Score).
+
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Scatter.png)
+
+SAT Score v. Participation Rate
+
+	There appears to be a negative correlation between Participation Rate and Verbal Score.
+
+    Similarly, we observe a negative correlation between Participation Rate and Math Score.
+
+	However there was one significant outlier to this trend within the Math distribution. OH: [26, 534, 439], where the participation was low (26%) and the Math Score was very low (439).
+
+    One possible explanation for this phenomenon is that in states with lower participation only higher achieving students are expected to take the exam.
+
+Math Score v. Verbal Score
+
+
+	There appears to be a strong positive correlation between Math and Verbal SAT scores.
+
+    This observation feels intuitively accurrate. It seems likely that a student's achievement across subjects would be strongly correlated.
+
+###Heatmap
