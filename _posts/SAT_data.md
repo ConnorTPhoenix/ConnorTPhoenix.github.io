@@ -34,9 +34,10 @@ Two assumptions were made related to the "State" column.
 
     In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
 
-    min and max were calculated using list comprehension as follows:
+    min and max were calculated using list comprehension for each column as follows:
 
-        max_verbal = max([row[2]for row in SAT_data])
+        max_rate = max([row[1]for row in SAT_data])
+        min_rate = min([row[1]for row in SAT_data])
 
         Output:
         max_rate: 82
