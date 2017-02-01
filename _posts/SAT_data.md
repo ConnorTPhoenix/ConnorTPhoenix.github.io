@@ -89,13 +89,13 @@ Passing in the row indices of the numeric columns as arguments yielded the follo
 
 The biggest take away from these measures is that the STANDARD DEVIATION supports our hunch that there is more variability in the Math (std=35.7) scores compared to Verbal (std=32.9).
 
-Also, given that the MEAN > MEDIAN for each numeric column, there is a positive skew to each distribution. However, it is not clear this is a significant level of skewness. 
+Also, given that the MEAN > MEDIAN for each numeric column, there is a positive skew to each distribution. However, it is not clear this is a significant level of skewness.
 
 ##Data Visualization
 
 ###ScatterPlots
 
-To get a better since of how each column in sat_scores.csv relate to each other I plotted a three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math v. Verbal Score).
+To get a better since of how each column in sat_scores.csv relate to each other I plotted three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math Score v. Verbal Score).
 
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Scatter.png)
 
@@ -103,11 +103,9 @@ SAT Score v. Participation Rate
 
 * There appears to be a negative correlation between Participation Rate and Verbal Score.
 
-* Similarly, we observe a negative correlation between Participation Rate and Math Score.
+* Similarly, we observe a negative correlation between Participation Rate and Math Score. However there was one significant outlier to this trend within the Math distribution. OH: [26, 534, 439], where the participation was low (26%) and the Math Score was very low (439).
 
-* However there was one significant outlier to this trend within the Math distribution. OH: [26, 534, 439], where the participation was low (26%) and the Math Score was very low (439).
-
-* One possible explanation for this phenomenon is that in states with lower participation only higher achieving students are expected to take the exam.
+* One possible explanation for this negative correlation is that in states with lower participation only higher achieving students are expected to take the exam.
 
 Math Score v. Verbal Score
 
