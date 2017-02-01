@@ -9,7 +9,7 @@ Fig 1. (Summary of Data)
 
 ![img](https://cloud.githubusercontent.com/assets/23442782/22491800/ea3b2078-e7f3-11e6-85f7-80cae1a337d4.png)
 
-    enter code here
+
 
 ##Data Cleaning
 The csv file provided by CollegeBoard.com was well structured and did not contain any missing or "NaN" values.
@@ -24,7 +24,9 @@ I imported the csv module and read the 'sat_data.csv' into a list of lists using
 
 ##Assumptions  
 
-Two assumptions were made related to the "State" column. The first was to include the row State="DC" in the dataset. Although Washington "DC" is technically not a state, its residents contribute to the total US population and are therefore relevant to the analysis. The row where State = "All" was removed from the dataset. Given that the "All" column is comprised of summary statistics of the rest of the dataset it made sense to exclude it from the analysis. I removed this row as well as the column names using list splicing:
+Two assumptions were made related to the "State" column.
+* The first was to include the row State="DC" in the dataset. Although Washington DC is technically not a state, DC residents contribute to the total US population and are therefore relevant to the analysis.
+* Second, the row where State = "All" was removed from the dataset. It made sense to remove this row from the dataset given that it is itself a summary statistic. I did this using list splicing:
 
     SAT_data = SAT_file[1:52]
 
@@ -36,12 +38,12 @@ min and max were calculated using list comprehension as follows:
 
     max_verbal = max([row[2]for row in SAT_data])
 
-max_rate: 82
-min_rate: 4
-max_verbal: 593
-min_verbal: 482
-max_math: 603
-min_math: 439
+Max_rate: 82
+Min_rate: 4
+Max_verbal: 593
+Min_verbal: 482
+Max_math: 603
+Min_math: 439
 
 From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
 
