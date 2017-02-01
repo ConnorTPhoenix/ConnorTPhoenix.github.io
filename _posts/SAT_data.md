@@ -30,61 +30,67 @@ Two assumptions were made related to the "State" column.
 
     SAT_data = SAT_file[1:52]
 
-##Computing Summary Statistics
+    ##Computing Summary Statistics
 
-In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
+    In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
 
-min and max were calculated using list comprehension as follows:
+    min and max were calculated using list comprehension as follows:
 
-    max_verbal = max([row[2]for row in SAT_data])
+        max_verbal = max([row[2]for row in SAT_data])
 
-Max_rate: 82
-Min_rate: 4
-Max_verbal: 593
-Min_verbal: 482
-Max_math: 603
-Min_math: 439
-
-From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
-
-Taking it a step further, I then calculated the standard deviation (std), mean, median, and mode for each numeric column. I first created a function for each statistic using numpy and scypi (for mode) as follows:
-
-def std_dev(row_index):
-	    return np.std([row[row_index] for row in SAT_data])
+        Output:
+        max_rate: 82
+        min_rate: 4
+        max_verbal: 593
+        min_verbal: 482
+        max_math: 603
+        min_math: 439
 
 
-    def mean(row_index):
-     return np.mean([row[row_index] for row in SAT_data])
+    From these values, it would appear the there is a large degree of variability in State SAT participation rates. These values also suggest that there is more variability in Math scores compared to Verbal.
 
-    def median(row_index):
-         return np.median([row[row_index] for row in SAT_data])
+    Taking it a step further, I then calculated the standard deviation (std) for each numeric column. I first created a function to calculated std() using numpy as follows:
 
-    def calc_mode(row_index):
-         return mode([row[row_index] for row in SAT_data]
+        def std_dev(row_index):
+    	    return np.std([row[row_index] for row in SAT_data])
 
-Passing in the row indices of the numeric columns as arguments yielded the following results:
 
-STANDARD DEVIATION
-Rate: 27.0379964945
-Verbal: 32.9150949616
-Math: 35.6669961643
+        def mean(row_index):
+         return np.mean([row[row_index] for row in SAT_data])
 
-MEAN:
-Rate: 37.0
-Verbal: 532.529411765
-Math: 531.843137255
+        def median(row_index):
+             return np.median([row[row_index] for row in SAT_data])
 
-MEDIAN:
-Rate: 33.0
-Verbal: 527.0
-Math: 525.0
+        def calc_mode(row_index):
+             return mode([row[row_index] for row in SAT_data]
 
-MODE:
-Rate: ModeResult(mode=array([4]), count=array([3]))
-Verbal: ModeResult(mode=array([562]), count=array([3]))
-Math: ModeResult(mode=array([499]), count=array([6]))
+    )
 
-These results support our hunch that there was more variability in the Math scores compared to Verbal.
+    Passing in the row indices of the numeric columns as arguments yield the following results:
+
+        Output:
+
+        STANDARD DEVIATION
+        Rate: 27.0379964945
+        Verbal: 32.9150949616
+        Math: 35.6669961643
+
+        MEAN:
+        Rate: 37.0
+        Verbal: 532.529411765
+        Math: 531.843137255
+
+        MEDIAN:
+        Rate: 33.0
+        Verbal: 527.0
+        Math: 525.0
+
+        MODE:
+        Rate: ModeResult(mode=array([4]), count=array([3]))
+        Verbal: ModeResult(mode=array([562]), count=array([3]))
+        Math: ModeResult(mode=array([499]), count=array([6]))
+
+    These results support our hunch that there was more variability in the Math scores compared to Verbal.
 
 ##Data Visualization
 
