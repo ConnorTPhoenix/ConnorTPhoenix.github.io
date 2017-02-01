@@ -126,7 +126,7 @@ To get a better sense of how SAT scores and participation rates vary across the 
 
 * Again we observe the inverse relationship between SAT scores and participation rate we saw in the scatterplots. The states with the darkest shading in the score maps are largely the states with the lightest shading on the participation map.   
 
-![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Math_Heatmap.png)
+![](../images/SAT_Math_Heatmap.png)
 
 ![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Verbal_Heatmap.png)
 
