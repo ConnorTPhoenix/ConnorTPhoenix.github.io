@@ -59,3 +59,4 @@ Math Standard Deviation: 35.6669961643
 These results support our hunch that there was more variability in the Math scores compared to Verbal.
 
 ##Data Visualization
+![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Scatter.png)
