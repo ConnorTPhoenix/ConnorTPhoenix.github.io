@@ -84,3 +84,9 @@ Math Score v. Verbal Score
     This observation feels intuitively accurrate. It seems likely that a student's achievement across subjects would be strongly correlated.
 
 ###Heatmap
+
+![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Math_Heatmap.png)
+
+![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Particpation_Heatmap.png)
+
+![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Verbal_Heatmap.png)
