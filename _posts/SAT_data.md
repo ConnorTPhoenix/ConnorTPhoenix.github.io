@@ -30,7 +30,7 @@ Two assumptions were made related to the "State" column.
 
     SAT_data = SAT_file[1:52]
 
-    ##Computing Summary Statistics
+##Computing Summary Statistics
 
     In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
 
