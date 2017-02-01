@@ -7,11 +7,11 @@ title: 2/1/2017
 In this first project for General Assembly's Data Science Immersive program we were tasked with investigating the average SAT scores by US State from 2001 for our client CollegeBoard.com. The goal was to read in a .csv file and explore the dataset using descriptive statistics and data visualizations.
 
 ##The Data
-The dataset is taken from CollegeBoard.com and provides the average SAT score by state for both the Math and Verbal sections. Also provided are the student participation rates for for each state. View dataset: [sat_scores.csv](https://git.generalassemb.ly/ConnorTPhoenix/project-1-sat-scores/blob/master/assets/sat_scores.csv)
+The dataset is taken from CollegeBoard.com and provides the average SAT score by state for both the Math and Verbal sections. Also provided are the student participation rates for for each state. View dataset: ![sat_scores.csv](https://git.generalassemb.ly/ConnorTPhoenix/project-1-sat-scores/blob/master/assets/sat_scores.csv)
 
 Fig 1. (Summary of Data)
 
-![img](https://cloud.githubusercontent.com/assets/23442782/22491800/ea3b2078-e7f3-11e6-85f7-80cae1a337d4.png)
+![](../images/Screen Shot 2017-01-31 at 4.34.19 PM)
 
 
 
@@ -101,7 +101,7 @@ Also, given that the MEAN > MEDIAN for each numeric column, there is a positive 
 
 To get a better since of how each column in sat_scores.csv relate to each other I plotted three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math Score v. Verbal Score).
 
-![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Scatter.png)
+![](../images/SAT_scatter.png)
 
 SAT Score v. Participation Rate
 
@@ -128,6 +128,6 @@ To get a better sense of how SAT scores and participation rates vary across the 
 
 ![](../images/SAT_Math_Heatmap.png)
 
-![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Verbal_Heatmap.png)
+![](../images/SAT_Verbal_Heatmap.png)
 
-![img](https://github.com/ConnorTPhoenix/ConnorTPhoenix.github.io/blob/master/_posts/assets/SAT_Particpation_Heatmap.png)
+![](../images/SAT_Particpation_Heatmap.png)
