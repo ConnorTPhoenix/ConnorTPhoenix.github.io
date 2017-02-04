@@ -2,11 +2,11 @@
 layout: post
 title: 2/1/2017
 ---
-#United States SAT Scores (2001)
-##Introduction
+# United States SAT Scores (2001)
+## Introduction
 In this first project for General Assembly's Data Science Immersive program we were tasked with investigating the average SAT scores by US State from 2001 for our client CollegeBoard.com. The goal was to read in a .csv file and explore the dataset using descriptive statistics and data visualizations.
 
-##The Data
+## The Data
 The dataset is taken from CollegeBoard.com and provides the average SAT score by state for both the Math and Verbal sections. Also provided are the student participation rates for for each state. View dataset: ![sat_scores.csv](https://git.generalassemb.ly/ConnorTPhoenix/project-1-sat-scores/blob/master/assets/sat_scores.csv)
 
 Fig 1. (Summary of Data)
@@ -15,7 +15,7 @@ Fig 1. (Summary of Data)
 
 
 
-##Data Cleaning
+## Data Cleaning
 The csv file provided by CollegeBoard.com was well structured and did not contain any missing or "NaN" values.
 
 I imported the csv module and read the 'sat_data.csv' into a list of lists using the csv.reader() method. After printing the resulting list I noted that the data within each column was of "str" type. I reassigned the data type of the 3 numeric columns (Rate, Math, & Verbal) using the below 'for loop':
@@ -26,7 +26,7 @@ I imported the csv module and read the 'sat_data.csv' into a list of lists using
     row[3] = int(row[3])  
 
 
-##Assumptions  
+## Assumptions  
 
 Two assumptions were made related to the "State" column.
 * The first was to include the row State="DC" in the dataset. Although Washington DC is technically not a state, DC residents contribute to the total US population and are therefore relevant to the analysis.
@@ -34,7 +34,7 @@ Two assumptions were made related to the "State" column.
 
     SAT_data = SAT_file[1:52]
 
-##Computing Summary Statistics
+## Computing Summary Statistics
 
 In order to gain a better sense of the data I computed the min, max, and standard deviation of each numeric column.  
 
@@ -95,9 +95,9 @@ The biggest take away from these measures is that the STANDARD DEVIATION support
 
 Also, given that the MEAN > MEDIAN for each numeric column, there is a positive skew to each distribution. However, it is not clear this is a significant level of skewness.
 
-##Data Visualization
+## Data Visualization
 
-###ScatterPlots
+### ScatterPlots
 
 To get a better since of how each column in sat_scores.csv relate to each other I plotted three scatterplots (Participation Rate v. Verbal Score, Participation Rate v. Math Score,  and Math Score v. Verbal Score).
 
@@ -118,7 +118,7 @@ Math Score v. Verbal Score
 
 * This observation feels intuitively accurrate. It seems likely that a student's achievement across subjects would be strongly correlated.
 
-###Heatmap
+### Heatmap
 
 To get a better sense of how SAT scores and participation rates vary across the US I generated three heatmaps for each numeric column using Tableau.  Each map highlights the variability in the data such that States with higher scores (or participation rates) are shaded in darker blue.
 
