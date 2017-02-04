@@ -7,7 +7,7 @@ title: 2/1/2017
 In this first project for General Assembly's Data Science Immersive program we were tasked with investigating the average SAT scores by US State from 2001 for our client CollegeBoard.com. The goal was to read in a .csv file and explore the dataset using descriptive statistics and data visualizations.
 
 ## The Data
-The dataset is taken from CollegeBoard.com and provides the average SAT score by state for both the Math and Verbal sections. Also provided are the student participation rates for for each state. View dataset: ![](ConnorTPhoenix.github.io/_posts/assets/sat_scores.csv)
+The dataset is taken from CollegeBoard.com and provides the average SAT score by state for both the Math and Verbal sections. Also provided are the student participation rates for for each state. View dataset: ![](/assets/sat_scores.csv)
 
 Fig 1. (Summary of Data)
 
