@@ -3,6 +3,7 @@ layout: post
 title: 2/1/2017
 ---
 # United States SAT Scores (2001)
+
 ## Introduction
 In this first project for General Assembly's Data Science Immersive program we were tasked with investigating the average SAT scores by US State from 2001 for our client CollegeBoard.com. The goal was to read in a .csv file and explore the dataset using descriptive statistics and data visualizations.
 
