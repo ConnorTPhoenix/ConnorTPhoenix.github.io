@@ -6,7 +6,7 @@ title: 2/17/2017
 
 
 ## Introduction
-In project 3 for General Assembly's Data Science Immersive program we were tasked with taking on the role of a consultant for a real estate firm located in Ames, Iowa. Our goal was to build a regression model to predict predict prices. We also tried to to give some insight into which areas had the highest sales prices and highest sales volume.
+In project 3 for General Assembly's Data Science Immersive program we were tasked with taking on the role of a consultant for a real estate firm located in Ames, Iowa. Our goal was to build a regression model to predict prices. We also tried to to give some insight into which areas had the highest sales prices and highest sales volume.
 
 ## The Data
 The dataset set was taken as a subset from Kaggle.com. We selected 19 features from the total 82 feature data set:
@@ -30,6 +30,9 @@ The dataset set was taken as a subset from Kaggle.com. We selected 19 features f
       MoSold           int64
       YrSold           int64
       SalePrice        int64
+
+## Data Exploration
+For the purposes of initial data exploration I was concerned primarily with the target variable 'Sale Price' as well as the features 'Neighborhood' and 'YearBuilt'.
 
 ![](../images/Sales_Price_hist.png)
 
