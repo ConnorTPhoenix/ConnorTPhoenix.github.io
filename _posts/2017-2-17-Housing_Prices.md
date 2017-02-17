@@ -42,7 +42,7 @@ Looking at 'YearBuilt' we see a negatively skewed distribution with a few outlie
 
 ![](../images/Year_Built_Hist.png)
 
-I wanted to understand the relationship between 'Neighborhood' and
+I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'. Given the large number of unique values in the 'Neighborhood' feature I subset the column on the Top 10 neighborhoods by Sales Volume and Average Sales Price.
 
 ![](../images/Top_Price_Sale_Price.png)
 
