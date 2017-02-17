@@ -104,10 +104,10 @@ Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. 
 
 Lastly, I attempted to improve on this ridge model by transforming the 'LotArea' and 'GrLivArea' columns. I had noting that the residual plots of each variable were not randomly distributed, I performed log transformation on each feature.
 
-####Residual Plots Prior to Transformations
+####Residual Plot Prior to Transformation
 ![](../images/Resid_pre.png)
 
-####Residual Plots Prior to Transformations
+####Residual Plot Post Transformation
 ![](../images/Resid_post.png)
 
 ## Conclusion
