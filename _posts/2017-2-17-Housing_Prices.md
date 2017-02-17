@@ -44,6 +44,6 @@ Looking at 'YearBuilt' we see a negatively skewed distribution with a few outlie
 
 I wanted to understand the relationship between 'Neighborhood' and
 
-![](Top_Price_Sale_Price.png)
+![](../images/Top_Price_Sale_Price.png)
 
-![](top_volume_saleprice.png)
+![](../images/top_volume_saleprice.png)
