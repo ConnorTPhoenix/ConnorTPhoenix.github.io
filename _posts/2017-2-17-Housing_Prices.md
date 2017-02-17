@@ -95,18 +95,20 @@ Using SKLearn I first performed a simple linear regression inclusive of all the 
         Mean_Coef_Abs: 45068.7745131
         Cross_Val_Score: 0.735669815285
 
-Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. Finally, I passed alpha = 4 into a Ridge regression. The Ridge regression yield an improved model in terms of cross val score:
+Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. I passed alpha = 4 into a Ridge regression. The Ridge regression yield an improved model in terms of cross val score:
 
         R2: :0.834579456205
         Mean_Coef_Abs: 9255.06622012
         Cross_Val_Score: 0.803575065065
         Selected_Alpha: 4
 
-Lastly, I attempted to improve on this ridge model by transforming the 'LotArea' and 'GrLivArea' columns.
+Lastly, I attempted to improve on this ridge model by transforming the 'LotArea' and 'GrLivArea' columns. I had noting that the residual plots of each variable were not randomly distributed, I performed log transformation on each feature.
 
-        R2: :0.843957221706
-        Mean_Coef_Abs: 10467.2040644
-        Cross_Val_Score: 0.821187681607
+####Residual Plots Prior to Transformations
+![](../images/Resid_pre.png)
+
+####Residual Plots Prior to Transformations
+![](../images/Resid_post.png)
 
 ## Conclusion
 ![](../images/Ridge_Model.png)
