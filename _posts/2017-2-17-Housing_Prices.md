@@ -66,6 +66,8 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 
 ## Regression Analysis
 
+![](../images/Corr.png)
+
 #### Methods and Assumptions
 
 * dummy variables
@@ -93,3 +95,4 @@ Lastly, I attempted to improve on this ridge model by transforming the 'LotArea'
         Cross_Val_Score: 0.821187681607
 
 ## Conclusion
+![](../images/Ridge_Model.png)
