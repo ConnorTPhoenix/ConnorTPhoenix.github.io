@@ -32,3 +32,5 @@ The dataset set was taken as a subset from Kaggle.com. We selected 19 features f
       SalePrice        int64
 
 ![](../images/Sales_Price_hist.png)
+
+![](../images/Highest_Rank_Hist.png)
