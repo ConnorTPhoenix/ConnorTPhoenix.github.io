@@ -56,7 +56,7 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 * Most of the top average sale price neighborhoods did not have a huge amount of variability in sale price. NridgHt and StoneBr were exceptions to this trend showing more variability.
 
 
-![](../images/Year_Built_Hist.png)
+![](../images/Year_Built_Volume.png)
 
 * As with the high volume neighborhoods, the high average sale price neighborhoods showed a large degree of variability in year built.
 ![](../images/Year_Built_Avg_price.png)
