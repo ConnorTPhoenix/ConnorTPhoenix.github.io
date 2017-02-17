@@ -68,9 +68,11 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 #### Methods and Assumptions
 
 * Dummy Variables
+
 In order to perform a statistical analysis on my entire data set I first had to convert some of the features to numeric values. I 'dummied' (converted to 0s and 1s the variables 'Utilities', 'Neighborhood', 'BldgType','HouseStyle','RoofStyle','RoofMatl', and 'MoSold'. This increased the  total number of feature columns from to 19 to 71.
 
 * Outliers
+
 I next wanted to address some outliers within the data. Given the positive skew in the 'Sale Price' target variable, I decided to only include rows with a 'Sale Price' within 3 standard deviations of the mean. I made the assumption that extreme home values are less predictable and therefore would negatively impact the performance of my model.
 
 I also noted that the 'YearRemodAdd' had a large number of outlier values for the year 1950. I made the assumption that this extreme value would negatively impact my model. My logic was that most home buyers would not be concerned about a remodel that happen so far in the past. To keep this column more meaningful I dropped all rows that had 'YearRemodAdd' == 1950.
