@@ -103,6 +103,7 @@ Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. 
         Selected_Alpha: 4
 
 Lastly, I attempted to improve on this ridge model by transforming the 'LotArea' and 'GrLivArea' columns. I had noting that the residual plots of each variable were not randomly distributed, I performed log transformation on each feature (see example below). This action further improved improved my model's cross val score:
+
         R2: :0.843957221706
         Mean_Coef_Abs: 10467.2040644
         Cross_Val_Score: 0.821187681607
