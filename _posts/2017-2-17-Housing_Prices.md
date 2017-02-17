@@ -115,4 +115,15 @@ Lastly, I attempted to improve on this ridge model by transforming the 'LotArea'
 ![](../images/Resid_post.png)
 
 ## Conclusion
+
+In this project I was able to give some insight into home prices in Ames, Iowa. Specifically I was able to identify the neighborhood locations that are the drivers of the real estate market both in terms of Sales Volume and Average Sale price. Additionally, I noted that the Ames real estate market has a high variance in terms of 'Year Built'. That is to say both newer and older homes are contributing to sales in the hottest neighborhoods.
+
+By building a regression model on a subset of available features I was able to generate the below model that has a predictive accuracy of 82.1% when cross validated on the sample data.
+
 ![](../images/Ridge_Model.png)
+
+#### Followup
+
+From here there are many opportunities to expand upon this analysis. I would like to do further exploratory analysis related to the 'OverallQual' and 'GrLivArea' features as these showed the strongest correlation with 'SalePrice'.
+
+I would also like to review the original dataset from Kaggle.com and include additional features in my model to see if could improve performance. Additionally, I would like to do more feature modification such as standardization to see the impact on the regression analysis.
