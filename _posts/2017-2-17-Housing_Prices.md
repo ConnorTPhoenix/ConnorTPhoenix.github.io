@@ -122,7 +122,7 @@ By building a regression model on a subset of available features I was able to g
 
 ![](../images/Ridge_Model.png)
 
-#### Followup
+### Followup
 
 From here there are many opportunities to expand upon this analysis. I would like to do further exploratory analysis related to the 'OverallQual' and 'GrLivArea' features as these showed the strongest correlation with 'SalePrice'.
 
