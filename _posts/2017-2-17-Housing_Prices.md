@@ -56,6 +56,8 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 * Most of the top average sale price neighborhoods did not have a huge amount of variability in sale price. NridgHt and StoneBr were exceptions to this trend showing more variability.
 
 
-* As with the high volume neighborhoods, the high average sale price neighborhoods showed a large degree of variability in year built.
+![](../images/Year_Built_Hist.png)
 
+* As with the high volume neighborhoods, the high average sale price neighborhoods showed a large degree of variability in year built.
+![](../images/Year_Built_Avg_price.png)
 High sales volume neighborhoods showed variability in terms of 'Year Built'. In some neighborhoods such as CollCr, Somerst, Gilbert, and NridgHt nearly all homes sold were built after 2000. Others like OldTown and Edwards had a much larger variance with a much older mean 'YearBuilt'.
