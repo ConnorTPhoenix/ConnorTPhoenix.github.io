@@ -44,7 +44,7 @@ Looking at 'YearBuilt' we see a negatively skewed distribution with a few outlie
 
 I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'. Given the large number of unique values in the 'Neighborhood' feature I subset the column on the Top 10 neighborhoods by Sales Volume and Average Sales Price.
 
-#### Top 10 Neighborhood by Sales Volume
+## Top 10 Neighborhood by Sales Volume
 
 ![](../images/top_volume_saleprice.png)
 
@@ -56,7 +56,7 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 * 'NoRidge' has the highest average sale price of any neighborhood.
 * Most of the top average sale price neighborhoods did not have a huge amount of variability in sale price. NridgHt and StoneBr were exceptions to this trend showing more variability.
 
-#### Top 10 Neighborhood by Average Sales Price
+## Top 10 Neighborhood by Average Sales Price
 
 ![](../images/Year_Built_Volume.png)
 
