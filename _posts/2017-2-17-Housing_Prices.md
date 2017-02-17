@@ -79,17 +79,15 @@ I also noted that the 'YearRemodAdd' had a large number of outlier values for th
 
 #### Correlations
 
-Prior to generating my regression model I wanted to first better understand the underlying correlation between the features and the target variable of 'SalePrice'. Unsurprisingly, a homes 'OverallQual' ranking and 'GrLivArea' are most predictive o 'Sale Price'.
+Prior to generating my regression model I wanted to first better understand the underlying correlation between the features and the target variable of 'SalePrice'. Unsurprisingly, OverallQual' ranking and 'GrLivArea' were most predictive of 'Sale Price'.
 
-Also noteworthy are the 2 neighborhood variables 'NrdigHt' and 'NoRidge' were the only dummy features in the top 10. This is a line with our previous findings that these neighborhoods had the highest average sale price.
-
+Also noteworthy were the 2 neighborhood variables 'NrdigHt' and 'NoRidge' being in the top 10 correlation features. This observation is a line with our previous findings that these neighborhoods had the highest average sale price.
 
 
 ![](../images/Corr.png)
 
 
-
-#### Regression Models
+### Regression Models
 I next ran a series of linear regressions on the data.
 Using SKLearn I first performed a simple linear regression inclusive of all the features previously modified above:
 
