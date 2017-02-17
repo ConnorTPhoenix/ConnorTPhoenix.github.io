@@ -74,10 +74,13 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 #### Regression Models
 I next ran a series of linear regressions on the data.
 Using SKLearn I first performed a simple linear regression inclusive of all the features previously modified above:
+
         R2:0.857692762189
         Mean_Coef_Abs: 45068.7745131
         Cross_Val_Score: 0.735669815285
+
 Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. Finally, I passed alpha = 4 into a Ridge regression. The Ridge regression yield an improved model in terms of cross val score:
+
         R2: :0.834579456205
         Mean_Coef_Abs: 9255.06622012
         Cross_Val_Score: 0.803575065065
