@@ -108,10 +108,10 @@ Lastly, I attempted to improve on this ridge model by transforming the 'LotArea'
         Mean_Coef_Abs: 10467.2040644
         Cross_Val_Score: 0.821187681607
 
-####Residual Plot Prior to Transformation
+#### Residual Plot Prior to Transformation
 ![](../images/Resid_pre.png)
 
-####Residual Plot Post Transformation
+#### Residual Plot Post Transformation
 ![](../images/Resid_post.png)
 
 ## Conclusion
