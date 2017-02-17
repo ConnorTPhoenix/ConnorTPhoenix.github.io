@@ -46,20 +46,16 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 
 ## Top 10 Neighborhood by Sales Volume
 
-![](../images/top_volume_saleprice.png)
-
 * Most high volume neighborhoods showed minimal 'Sale Price' variability and had mean Sale Prices fairly close to the population mean.
 * NridgHt was one outlier to this trend with a mean Sale Price over $300K.
-
-![](../images/Top_Price_Sale_Price.png)
-
 * 'NoRidge' has the highest average sale price of any neighborhood.
 * Most of the top average sale price neighborhoods did not have a huge amount of variability in sale price. NridgHt and StoneBr were exceptions to this trend showing more variability.
+![](../images/top_volume_saleprice.png)
+![](../images/Top_Price_Sale_Price.png)
 
 ## Top 10 Neighborhood by Average Sales Price
 
-![](../images/Year_Built_Volume.png)
-
 * As with the high volume neighborhoods, the high average sale price neighborhoods showed a large degree of variability in year built.
+* High sales volume neighborhoods showed variability in terms of 'Year Built'. In some neighborhoods such as CollCr, Somerst, Gilbert, and NridgHt nearly all homes sold were built after 2000. Others like OldTown and Edwards had a much larger variance with a much older mean 'YearBuilt'.
+![](../images/Year_Built_Volume.png)
 ![](../images/Year_Built_Avg_price.png)
-High sales volume neighborhoods showed variability in terms of 'Year Built'. In some neighborhoods such as CollCr, Somerst, Gilbert, and NridgHt nearly all homes sold were built after 2000. Others like OldTown and Edwards had a much larger variance with a much older mean 'YearBuilt'.
