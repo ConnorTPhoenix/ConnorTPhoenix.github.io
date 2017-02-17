@@ -86,4 +86,10 @@ Next, I performed a Ridge CV regression to determine an ideal alpha value of 4. 
         Cross_Val_Score: 0.803575065065
         Selected_Alpha: 4
 
+Lastly, I attempted to improve on this ridge model by transforming the 'LotArea' and 'GrLivArea' columns.
+
+        R2: :0.843957221706
+        Mean_Coef_Abs: 10467.2040644
+        Cross_Val_Score: 0.821187681607
+
 ## Conclusion
