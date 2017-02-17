@@ -50,7 +50,8 @@ I wanted to understand the relationship between 'Neighborhood' and 'Sales Price'
 * NridgHt was one outlier to this trend with a mean Sale Price over $300K.
 * 'NoRidge' has the highest average sale price of any neighborhood.
 * Most of the top average sale price neighborhoods did not have a huge amount of variability in sale price. NridgHt and StoneBr were exceptions to this trend showing more variability.
-<br/>
+<br><br>
+<br><br>
 ![](../images/top_volume_saleprice.png)
 ![](../images/Top_Price_Sale_Price.png)
 
