@@ -92,6 +92,9 @@ I next wanted to rerun the binary model and adjust the probability threshold nee
 
 Notice that the more restrictive classification threshold comes at the cost of model accuracy. Beyond a 80% the model approaches the accuracy of random chance (50%). This tradeoff concept as well as the overall model accuracy is represented in the ROC curve below. The straight diagonal line would represent a model with predictive power equal to random chance. The binary (second) logistic regression model is depicted by the solid blue line.
 
-![](../images/ROC_Curve.png =100x100)
-
+![](../images/ROC_Curve.png)
+.foo {
+  text-align: center;
+  width: 100px;
+}
 ### Next Steps
