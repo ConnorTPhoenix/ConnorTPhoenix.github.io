@@ -90,11 +90,14 @@ In the second (binary) classification model the features most predictive of sala
 
 I next wanted to rerun the binary model and adjust the probability threshold needed to categorize a job as High or Low salary grade. Specifically, I wanted to make it more restrictive to classify a salary as High grade. This type of threshold adjustment is common in medical trails where false negative or positive diagnoses do not necessarily carry equivalent risk. In the context of job postings this might be relevant if we did not want to false inflate salary expectations of an application by false predicting a salary to be high when it was in fact true. I adjust the model probability threshold for High salary classification to 60%, 70%, and 80%, yielding the below accuracy scores:
 
-Threshold   Accuracy
-      60%   0.735
-      70%   0.630
-      80%   0.512
+| Threshold |Accuracy |
+|-----------|---------|        
+|      60%  | 0.735   |
+|      70%  | 0.630   |
+|      80%  | 0.512   |
 
 Notice that the more restrictive classification threshold comes at the cost of model accuracy. Beyond a 80% the model approaches the accuracy of random chance (50%). This tradeoff concept as well as the overall model accuracy is represented in the ROC curve below. The straight diagonal line would represent a model with predictive power equal to random chance. The binary (second) logistic regression model is depicted by the solid blue line.
 
 ### Next Steps
+
+![](../images/ROC_Curve.png)
