@@ -94,4 +94,4 @@ Notice that the more restrictive classification threshold comes at the cost of m
 
 ### Next Steps
 
-![](../images/ROC_Curve.png){ width=50% }
+![width=50%](../images/ROC_Curve.png)
