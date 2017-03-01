@@ -28,12 +28,12 @@ I made several assumptions regarding the salary information I was able to acquir
 I was also only collecting information from the page returned after the initial search meaning no information was gathered from specific job posting pages. Furthermore, I was making the assumption that searching 'Data Science' in Indeed would yield only results related to this field. While most job titles included terms such as 'Data', 'Analyst' etc. others such as 'Office Manager' seemed less relevant. Given that Indeed.com found some reason to include them in its search results, I decided to keep these less intuitive results.
 
 ### What is Logistic Regression?
-Despite the inherent shortcomings of my analysis methodology I continued onward to build a logistic regression model. What is a logistic regression you ask? Despite the name, it is actually a type of classification algorithm. In essence, logistic regression allows you to predict the probability of whether a single observation belongs to a particular class given an array of features. Logisitic regression can be used for binary  or multinomial classification, meaning we can predict between two or multiple classes. In this analysis I used both approachs to test whether a salary was 'High' v. 'Low' (binary) or 'High' v. 'Med' v. 'Low' (multinomial).
+Despite the inherent shortcomings of my analysis methodology I continued onward to build a logistic regression model. What is a logistic regression you ask? Despite the name, it is actually a type of classification algorithm. In essence, logistic regression allows you to predict the probability of whether a single observation belongs to a particular class given an array of features. Logistic regression can be used for binary  or multinomial classification, meaning we can predict between two or multiple classes. In this analysis I used both approaches to test whether a salary was 'High' v. 'Low' (binary) or 'High' v. 'Med' v. 'Low' (multinomial).
 
 ### Feature Selection
 After parsing the Indeed search data into a dataframe I was ready to generate some features. Taking the most popular data science keywords from the popular data science blog DataScienceCentral.com I create an matrix of binary variables to indicate whether a keyword was included in the job summary or job title. See list of keywords used below:
 
-DATA SCIENCE KEYWORDS = ['Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API']
+DATA SCIENCE KEYWORDS = 'Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API'
 
 Collected From:
 
@@ -92,6 +92,6 @@ I next wanted to rerun the binary model and adjust the probability threshold nee
 
 Notice that the more restrictive classification threshold comes at the cost of model accuracy. Beyond a 80% the model approaches the accuracy of random chance (50%). This tradeoff concept as well as the overall model accuracy is represented in the ROC curve below. The straight diagonal line would represent a model with predictive power equal to random chance. The binary (second) logistic regression model is depicted by the solid blue line.
 
-### Next Steps
+![](../images/ROC_Curve.png){:height="36px" width="36px"} 
 
-![width=50%](../images/ROC_Curve.png)
+### Next Steps
