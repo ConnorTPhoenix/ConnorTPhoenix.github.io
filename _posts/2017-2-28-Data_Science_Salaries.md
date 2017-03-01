@@ -62,14 +62,14 @@ Seattle                     0.474927 -0.097497  0.000000
 
 The second model classified salaries as being Low or High (based on dividing the salary feature into < Median Salary and > Median Salary). The resulting model had an accuracy score of 0.768. Again most coefficients were eliminated due to LI regularization. The remaining coefficients were the following:
 
- | Feature  | Coef |
- |---|---|
- |Yearly Salary| 0.030896|
- |Monthly Salary| -0.253248|
- |Data Scientist in Summary| 0.979172|
- |Data Scientist in Title  |0.643170|
+ |Feature|Coef|
+ |-------|----|
+ |Yearly Salary|0.030896|
+ |Monthly Salary|-0.253248|
+ |Data Scientist in Summary|0.979172|
+ |Data Scientist in Title|0.643170|
  |Machine Learning in Title|0.689401|
- |Data Scientist in Title  0.643170|
+ |Data Scientist in Title|0.643170|
 
 
 ## Conclusion
