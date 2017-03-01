@@ -94,6 +94,6 @@ Notice that the more restrictive classification threshold comes at the cost of m
 
 ![](../images/ROC_Curve.png){:height="36px" width="36px"}
 
-<img src=”../images/ROC_Curve.png” />
+<img src=”ConnorTPhoenix.github.io/images/ROC_Curve.png” />
 
 ### Next Steps
