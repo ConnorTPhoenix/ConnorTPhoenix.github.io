@@ -2,8 +2,7 @@
 layout: post
 title: 3/1/2017
 ---
-# Data Science Job Postings:
-# Salary Classification Using Logistic Regression
+# Job Posting Salary Classification Using Logistic Regression
 
 ![](../images/DataWordCloud.png)
 
