@@ -46,30 +46,31 @@ I ran two logistic regression models using GridesearchCV to optimize the penalty
 
 The first model classified salaries as being Low, Medium, or High (based on dividing the salary feature into terciles). The resulting model had an accuracy score of 0.605. Most coefficients were reduced to 0 due to LI Lasso regularization. The remaining coefficients were the following:
 
-Feature                       Low       Med      High
-Yearly Salary              -1.206711  0.296629  0.456754
-Monthly Salary              0.229710 -0.099759 -0.470009
-Machine Learning in smry   -0.044644  0.000000  0.628999
-Data Scientist in smry     -0.820049 -0.535273  1.454416
-SQL in smry                 0.000000  0.104633  0.000000
-Machine Learning in title  -1.152868  0.000000  0.980844
-Data Scientist in title    -0.629340 -0.248611  0.889064
-Austin                      0.000000  0.000000 -0.072340
-Seattle                     0.474927 -0.097497  0.000000
+| Feature                   | Low       | Med       | High      |
+|---------------------------|-----------|-----------|-----------|
+| Yearly Salary             | -1.206711 | 0.296629  | 0.456754  |
+| Monthly Salary            | 0.229710  | -0.099759 | -0.470009 |
+| Machine Learning in smry  | -0.044644 | 0.000000  | 0.628999  |
+| Data Scientist in smry    | -0.820049 | -0.535273 | 1.454416  |
+| SQL in smry               | 0.000000  | 0.104633  | 0.000000  |
+| Machine Learning in title | -1.152868 | 0.000000  | 0.980844  |
+| Data Scientist in title   | -0.629340 | -0.248611 | 0.889064  |
+| Austin                    | 0.000000  | 0.000000  | -0.072340 |
+| Seattle                   | 0.474927  | -0.097497 | 0.000000  |
 
 
 
 
 The second model classified salaries as being Low or High (based on dividing the salary feature into < Median Salary and > Median Salary). The resulting model had an accuracy score of 0.768. Again most coefficients were eliminated due to LI regularization. The remaining coefficients were the following:
 
- |Feature|Coef|
- |-------|----|
- |Yearly Salary|0.030896|
- |Monthly Salary|-0.253248|
- |Data Scientist in Summary|0.979172|
- |Data Scientist in Title|0.643170|
- |Machine Learning in Title|0.689401|
- |Data Scientist in Title|0.643170|
+| Feature                   | Coef      |
+|---------------------------|-----------|
+| Yearly Salary             | 0.030896  |
+| Monthly Salary            | -0.253248 |
+| Data Scientist in Summary | 0.979172  |
+| Data Scientist in Title   | 0.643170  |
+| Machine Learning in Title | 0.689401  |
+| Data Scientist in Title   | 0.643170  |
 
 
 ## Conclusion
