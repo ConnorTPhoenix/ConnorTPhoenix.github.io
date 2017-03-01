@@ -33,7 +33,7 @@ Despite the inherent shortcomings of my analysis methodology I continued onward 
 #### Feature Selection
 After parsing the Indeed search data into a dataframe I was ready to generate some features. Taking the most popular data science keywords from the popular data science blog DataScienceCentral.com I create an matrix of binary variables to indicate whether a keyword was included in the job summary or job title. See list of keywords used below:
 
-          DATA SCIENCE KEYWORDS = ['Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API']
+DATA SCIENCE KEYWORDS = ['Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API']
 
 Collected From:
 
@@ -46,16 +46,16 @@ I ran two logistic regression models using GridesearchCV to optimize the penalty
 
 The first model classified salaries as being Low, Medium, or High (based on dividing the salary feature into terciles). The resulting model had an accuracy score of 0.605. Most coefficients were reduced to 0 due to LI Lasso regularization. The remaining coefficients were the following:
 
-                        Feature       Low       Med      High
-                  Yearly Salary -1.206711  0.296629  0.456754
-                 Monthly Salary  0.229710 -0.099759 -0.470009
-       Machine Learning in smry -0.044644  0.000000  0.628999
-         Data Scientist in smry -0.820049 -0.535273  1.454416
-                    SQL in smry  0.000000  0.104633  0.000000
-      Machine Learning in title -1.152868  0.000000  0.980844
-        Data Scientist in title -0.629340 -0.248611  0.889064
-                         Austin  0.000000  0.000000 -0.072340
-                        Seattle  0.474927 -0.097497  0.000000
+Feature                       Low       Med      High
+Yearly Salary              -1.206711  0.296629  0.456754
+Monthly Salary              0.229710 -0.099759 -0.470009
+Machine Learning in smry   -0.044644  0.000000  0.628999
+Data Scientist in smry     -0.820049 -0.535273  1.454416
+SQL in smry                 0.000000  0.104633  0.000000
+Machine Learning in title  -1.152868  0.000000  0.980844
+Data Scientist in title    -0.629340 -0.248611  0.889064
+Austin                      0.000000  0.000000 -0.072340
+Seattle                     0.474927 -0.097497  0.000000
 
 
 The second model classified salaries as being Low or High (based on dividing the salary feature into < Median Salary and > Median Salary). The resulting model had an accuracy score of 0.768. Again most coefficients were eliminated due to LI regularization. The remaining coefficients were the following:
