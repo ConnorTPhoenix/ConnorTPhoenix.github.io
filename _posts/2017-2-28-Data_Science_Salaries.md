@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 2/29/2017
+title: 3/1/2017
 ---
 # Data Science Job Postings: Salary Classification Using Logistic Regression
 
-![](../images/DataWordCloud.png))
+![](../images/DataWordCloud.png)
 
 ## Introduction
 In this project I sought to understand what factors influence salaries for Data Science career postings. In a highly publicized article from 2012, Harvard Business Review deemed Data Scientist to be the "The Sexiest Job of the 21st Century".  As technological barriers such as computer storage cost and internet access continue to decrease, an ever growing abundance of digital information will be available for analysis. The potential applications from these analyses is huge and driving the demand for skilled Data Scientists through the roof. While there has been some debate on the merits of this claim, the central thesis of the article appears to be supported by the current job market.
@@ -33,7 +33,7 @@ Despite the inherent shortcomings of my analysis methodology I continued onward 
 #### Feature Selection
 After parsing the Indeed search data into a dataframe I was ready to generate some features. Taking the most popular data science keywords from the popular data science blog DataScienceCentral.com I create an matrix of binary variables to indicate whether a keyword was included in the job summary or job title. See list of keywords used below:
 
-DATA SCIENCE KEYWORDS = ['Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API']
+          DATA SCIENCE KEYWORDS = ['Data Science', 'Big Data', 'Analytics', 'Machine Learning', 'Data Mining', 'Hadoop', 'Pivotal', 'Visualization', 'Deep Learning', 'Python', 'Business Intelligence', 'R Programming', 'Data Scientist', 'Predictive Modeling','Clustering', 'Operations Research', 'Statistician', 'NoSQL', 'Graph Database', 'Database', 'SQL', 'Excel','IoT', 'Internet of Things', 'Data Warehouse', 'Data Engineer', 'Data Architect', 'API']
 
 Collected From:
 
@@ -49,9 +49,9 @@ The first model classified salaries as being Low, Medium, or High (based on divi
                     Feature       Low       Med      High
               Yearly Salary -1.206711  0.296629  0.456754
              Monthly Salary  0.229710 -0.099759 -0.470009
-Machine Learning in summary -0.044644  0.000000  0.628999
-  Data Scientist in summary -0.820049 -0.535273  1.454416
-             SQL in summary  0.000000  0.104633  0.000000
+   Machine Learning in smry -0.044644  0.000000  0.628999
+     Data Scientist in smry -0.820049 -0.535273  1.454416
+                SQL in smry  0.000000  0.104633  0.000000
   Machine Learning in title -1.152868  0.000000  0.980844
     Data Scientist in title -0.629340 -0.248611  0.889064
                      Austin  0.000000  0.000000 -0.072340
@@ -66,6 +66,7 @@ The second model classified salaries as being Low or High (based on dividing the
            Data Scientist in summary  0.979172
            Machine Learning in title  0.689401
              Data Scientist in title  0.643170
+
 ## Conclusion
 
 #### Findings
@@ -77,10 +78,10 @@ In the second (binary) classification model the features most predictive of sala
 
 I next wanted to rerun the binary model and adjust the probability threshold needed to categorize a job as High or Low salary grade. Specifically, I wanted to make it more restrictive to classify a salary as High grade. This type of threshold adjustment is common in medical trails where false negative or positive diagnoses do not necessarily carry equivalent risk. In the context of job postings this might be relevant if we did not want to false inflate salary expectations of an application by false predicting a salary to be high when it was in fact true. I adjust the model probability threshold for High salary classification to 60%, 70%, and 80%, yielding the below accuracy scores:
 
-        Threshold   Accuracy
-              60%   0.735
-              70%   0.630
-              80%   0.512
+                        Threshold   Accuracy
+                              60%   0.735
+                              70%   0.630
+                              80%   0.512
 
 Notice that the more restrictive classification threshold comes at the cost of model accuracy. Beyond a 80% the model approaches the accuracy of random chance (50%). This tradeoff concept as well as the overall model accuracy is represented in the ROC curve below. The straight diagonal line would represent a model with predictive power equal to random chance. The binary (second) logistic regression model is depicted by the solid blue line.
 
