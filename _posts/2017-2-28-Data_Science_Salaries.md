@@ -58,26 +58,19 @@ Austin                      0.000000  0.000000 -0.072340
 Seattle                     0.474927 -0.097497  0.000000
 
 
-|   | A | B |
-|---|---|---|
-|   | 1 | 3 |
-|   | 4 | 6 |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+
 
 The second model classified salaries as being Low or High (based on dividing the salary feature into < Median Salary and > Median Salary). The resulting model had an accuracy score of 0.768. Again most coefficients were eliminated due to LI regularization. The remaining coefficients were the following:
 
-                             Feature      Coef
-                       Yearly Salary  0.030896
-                      Monthly Salary -0.253248
-           Data Scientist in summary  0.979172
-           Machine Learning in title  0.689401
-             Data Scientist in title  0.643170
+ | Feature  | Coef |
+ |---|---|
+ |Yearly Salary| 0.030896|
+ |Monthly Salary| -0.253248|
+ |Data Scientist in Summary| 0.979172|
+ |Data Scientist in Title  |0.643170|
+ |Machine Learning in Title|0.689401|
+ |Data Scientist in Title  0.643170|
+
 
 ## Conclusion
 
@@ -100,4 +93,4 @@ Notice that the more restrictive classification threshold comes at the cost of m
 
 ### Next Steps
 
-![](../images/ROC_Curve.png)
+![](../images/ROC_Curve.png = 100x100)
