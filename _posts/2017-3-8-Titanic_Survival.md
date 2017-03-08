@@ -66,7 +66,7 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 ## Results
 ### K Nearest Neighbors
 
-Accuracy: 0.81
+* Accuracy: 0.81
 
 |                           | Precision | Recall    | F1-Score  | Support |
 |---------------------------|-----------|-----------|-----------|---------|
