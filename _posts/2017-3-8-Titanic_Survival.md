@@ -84,18 +84,6 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 | Survived                  | 0.71      | 0.74      | 0.73      | 111     |
 | Avg/Total                 | 0.79      | 0.79      | 0.79      | 295     |
 
-
-### Random Forest
-
-* Accuracy: 0.81
-
-|                           | Precision | Recall    | F1-Score  | Support |
-|---------------------------|-----------|-----------|-----------|---------|
-| Perished                  | 0.84      | 0.86      | 0.85      | 184     |
-| Survived                  | 0.76      | 0.74      | 0.75      | 111     |
-| Avg/Total                 | 0.81      | 0.81      | 0.81      | 295     |
-
-
 | Feature             | Coef.     |
 |---------------------|-----------|
 | Sex_male            | -2.844442 |
@@ -112,6 +100,18 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 | Age Bucket_50 to 60 | 0.000000  |
 | Age Bucket_60 to 70 | 0.000000  |
 | Age Bucket_70 to 80 | 0.000000  |
+
+### Random Forest
+
+* Accuracy: 0.81
+
+|                           | Precision | Recall    | F1-Score  | Support |
+|---------------------------|-----------|-----------|-----------|---------|
+| Perished                  | 0.84      | 0.86      | 0.85      | 184     |
+| Survived                  | 0.76      | 0.74      | 0.75      | 111     |
+| Avg/Total                 | 0.81      | 0.81      | 0.81      | 295     |
+
+
 
 
 
