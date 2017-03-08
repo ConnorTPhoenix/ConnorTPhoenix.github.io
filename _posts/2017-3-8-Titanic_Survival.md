@@ -133,9 +133,3 @@ Each of the 3 classification models yielded very similar accuracy scores of appr
 Despite the consistent performance between models the two that give us insight into feature importance tell slightly different stories. The logistic regression model yielded 'male gender', '<10 years of age', 'passenger class 3', 'family size', and 'embarked from Southampton' as the highest coefficients. With the exception of '<10 years of age', each of these features was negatively correlated with the probability of survival.
 
 Looking at the random forest model we can see that the most import features are identical. However, note that the ordering of importance is different. While male gender is still the most determinant feature, the RF model ranks 'family size' as the second most import feature compared to '<10 years of age' in the logistic model. This is driven by the fact that despite '<10 years of age' being highly correlated with survival, it is not present frequently enough in the dataset to be ranked as the 2nd most importance feature by the RF model
-
-| Sex_male            | 0.385885   |
-| FamSize             | 0.201719   |
-| Pclass_3            | 0.129332   |
-| Embarked_S          | 0.059779   |
-| Age Bucket_0 to 10  | 0.053294   |
