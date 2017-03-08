@@ -76,7 +76,7 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 
 ### Logistic Regression
 
-Accuracy: 0.79
+* Accuracy: 0.79
 
 |                           | Precision | Recall    | F1-Score  | Support |
 |---------------------------|-----------|-----------|-----------|---------|
@@ -87,7 +87,7 @@ Accuracy: 0.79
 
 ### Random Forest
 
-Accuracy: 0.81
+* Accuracy: 0.81
 
 |                           | Precision | Recall    | F1-Score  | Support |
 |---------------------------|-----------|-----------|-----------|---------|
