@@ -84,6 +84,18 @@ Accuracy: 0.79
 | Survived                  | 0.71      | 0.74      | 0.73      | 111     |
 | Avg/Total                 | 0.79      | 0.79      | 0.79      | 295     |
 
+
+### Random Forest
+
+Accuracy: 0.81
+
+|                           | Precision | Recall    | F1-Score  | Support |
+|---------------------------|-----------|-----------|-----------|---------|
+| Perished                  | 0.84      | 0.86      | 0.85      | 184     |
+| Survived                  | 0.76      | 0.74      | 0.75      | 111     |
+| Avg/Total                 | 0.81      | 0.81      | 0.81      | 295     |
+
+
 | Feature             | Coef.     |
 |---------------------|-----------|
 | Sex_male            | -2.844442 |
@@ -101,32 +113,25 @@ Accuracy: 0.79
 | Age Bucket_60 to 70 | 0.000000  |
 | Age Bucket_70 to 80 | 0.000000  |
 
-### Random Forest
 
-Accuracy: 0.81
 
-            |                           | Precision | Recall    | F1-Score  | Support |
-            |---------------------------|-----------|-----------|-----------|---------|
-            | Perished                  | 0.84      | 0.86      | 0.85      | 184     |
-            | Survived                  | 0.76      | 0.74      | 0.75      | 111     |
-            | Avg/Total                 | 0.81      | 0.81      | 0.81      | 295     |
 
-            | Feature             | Importance |
-            |---------------------|------------|
-            | Sex_male            | 0.385885   |
-            | FamSize             | 0.201719   |
-            | Pclass_3            | 0.129332   |
-            | Embarked_S          | 0.059779   |
-            | Age Bucket_0 to 10  | 0.053294   |
-            | Pclass_2            | 0.038061   |
-            | Age Bucket_30 to 40 | 0.026794   |
-            | Age Bucket_20 to 30 | 0.025538   |
-            | Age Bucket_40 to 50 | 0.020763   |
-            | Age Bucket_10 to 20 | 0.018566   |
-            | Embarked_Q          | 0.016015   |
-            | Age Bucket_60 to 70 | 0.010167   |
-            | Age Bucket_50 to 60 | 0.009655   |
-            | Age Bucket_70 to 80 | 0.004432   |
+| Feature             | Importance |
+|---------------------|------------|
+| Sex_male            | 0.385885   |
+| FamSize             | 0.201719   |
+| Pclass_3            | 0.129332   |
+| Embarked_S          | 0.059779   |
+| Age Bucket_0 to 10  | 0.053294   |
+| Pclass_2            | 0.038061   |
+| Age Bucket_30 to 40 | 0.026794   |
+| Age Bucket_20 to 30 | 0.025538   |
+| Age Bucket_40 to 50 | 0.020763   |
+| Age Bucket_10 to 20 | 0.018566   |
+| Embarked_Q          | 0.016015   |
+| Age Bucket_60 to 70 | 0.010167   |
+| Age Bucket_50 to 60 | 0.009655   |
+| Age Bucket_70 to 80 | 0.004432   |
 
 Conclusion
 Verified common wisdom
