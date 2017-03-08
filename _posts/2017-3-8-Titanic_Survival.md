@@ -94,12 +94,7 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 | Pclass_2            | -0.723945 |
 | Age Bucket_10 to 20 | 0.212087  |
 | Age Bucket_30 to 40 | 0.209203  |
-| Embarked_Q          | 0.000000  |
-| Age Bucket_20 to 30 | 0.000000  |
-| Age Bucket_40 to 50 | 0.000000  |
-| Age Bucket_50 to 60 | 0.000000  |
-| Age Bucket_60 to 70 | 0.000000  |
-| Age Bucket_70 to 80 | 0.000000  |
+|
 
 ### Random Forest
 
@@ -110,11 +105,6 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 | Perished                  | 0.84      | 0.86      | 0.85      | 184     |
 | Survived                  | 0.76      | 0.74      | 0.75      | 111     |
 | Avg/Total                 | 0.81      | 0.81      | 0.81      | 295     |
-
-
-
-
-
 
 | Feature             | Importance |
 |---------------------|------------|
@@ -133,6 +123,19 @@ A random forest model is an ensemble model comprised of multiple decision trees.
 | Age Bucket_50 to 60 | 0.009655   |
 | Age Bucket_70 to 80 | 0.004432   |
 
-Conclusion
-Verified common wisdom
-Model performance
+## Conclusion
+
+### Model performance
+
+Each of the 3 classification models yielded very similar accuracy scores of approximately .80. This means that all 3 models were able to correctly classify a passenger's fate about 80% of the time. Alternatively we could also look at precision and recall to evaluate model performance. Precision is the measure of (True Positives)/(True Positives + False Positives) or alternatively (# passengers labeled 'perished' who actually perished)/(# of passengers labeled 'perished'). Recall is the measure of (True Positives)/ (True Positives + False Negatives) or (# passengers labeled 'perished' who actually perished)/(# of passengers who actually perished). F1 score is simply a weighted average of these two measures. Again we see consistency across the models with precision/recall around .85 for the 'perished' condition and about .75 for the 'survived' condition.
+
+### Feature Importance
+Despite the consistent performance between models the two that give us insight into feature importance tell slightly different stories. The logistic regression model yielded 'male gender', '<10 years of age', 'passenger class 3', 'family size', and 'embarked from Southampton' as the highest coefficients. With the exception of '<10 years of age', each of these features was negatively correlated with the probability of survival.
+
+Looking at the random forest model we can see that the most import features are identical. However, note that the ordering of importance is different. While male gender is still the most determinant feature, the RF model ranks 'family size' as the second most import feature compared to '<10 years of age' in the logistic model. This is driven by the fact that despite '<10 years of age' being highly correlated with survival, it is not present frequently enough in the dataset to be ranked as the 2nd most importance feature by the RF model
+
+| Sex_male            | 0.385885   |
+| FamSize             | 0.201719   |
+| Pclass_3            | 0.129332   |
+| Embarked_S          | 0.059779   |
+| Age Bucket_0 to 10  | 0.053294   |
